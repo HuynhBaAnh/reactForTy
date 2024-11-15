@@ -2,6 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import Button from "./component/Button";
 import Item from "./component/Item";
+import Btaponclick from "./component/Btaponclick";
+import Input from "./component/Input";
+import Menubar from "./component/Menubar";
+import Test from "./component/Test";
+import { ScissorOutlined, SmileOutlined } from "@ant-design/icons";
+import Icon from "./component/Icon";
 
 function App() {
   const [soClick, setSoClick] = useState(0);
@@ -51,6 +57,13 @@ function App() {
       <button className="border border-red-300 p-2" onClick={testuseState1}>
         -
       </button>
+      <Btaponclick />
+      <Test />
+      <Input />
+      <Menubar />
+      <ScissorOutlined className="text-5xl" />
+      <Icon content={"hihi Tí Điên"} />
+      <Icon content={"Hihi Tí Điên"} icon={<SmileOutlined />} />
     </>
   );
 }
